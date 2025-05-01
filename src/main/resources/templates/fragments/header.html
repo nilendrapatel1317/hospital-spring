@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- Option 1: Include in HTML -->
+
+</head>
+<body>
+	<div th:fragment="navbar">
+		<nav class="d-flex flex-column bg-dark text-white p-3 vh-100"
+			style="width: 200px;">
+			<h2 class="mb-5">
+				<a class="nav-link text-white" th:href="@{/}"><img
+					src="/images/logo.png" alt="Patient Image" class="logo-img"></a>
+			</h2>
+			<ul class="nav flex-column gap-2">
+				<li class="nav-item mb-2 d-flex align-items-center"><i
+					class="bi bi-person-lines-fill"></i> <a class="nav-link text-white"
+					th:href="@{/patient}">Patient</a></li>
+				<li class="nav-item mb-2 d-flex align-items-center"><i
+					class="bi bi-person-lines-fill"></i><a class="nav-link text-white"
+					th:href="@{/doctor}">Doctor</a></li>
+				<li class="nav-item mb-2 d-flex align-items-center"><i
+					class="bi bi-calendar-fill"></i><a class="nav-link text-white"
+					th:href="@{/appointment}">Appointment</a></li>
+				<li class="nav-item mb-2 d-flex align-items-center"><i
+					class="bi bi-receipt"></i><a class="nav-link text-white"
+					th:href="@{/bill}">Billing</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

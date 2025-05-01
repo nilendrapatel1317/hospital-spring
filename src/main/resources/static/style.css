@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.table-wrapper {
+	max-height: 500px; /* Set your preferred height */
+	overflow-y: auto;
+}
+
+.logo-img {
+	height: 50px;
+	padding: 0;
+}
