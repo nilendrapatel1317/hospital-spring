@@ -28,7 +28,7 @@
 			<div class="container mt-5" style="max-width: 550px;">
 				<div class="card shadow mx-auto">
 					<div class="card-body p-4">
-						<h2 class="text-center mb-4 text-primary fw-bold">Edit Bill</h2>
+						<h2 class="text-center mb-4 text-primary fw-bold">Pay Due Amount</h2>
 
 						<form th:action="@{/bill/edit/{id}(id=*{id})}" method="post"
 							th:object="${bill}">
@@ -70,8 +70,7 @@
 
 							<!-- Buttons -->
 							<div class="d-flex justify-content-between mt-4">
-								<button type="submit" class="btn btn-primary w-50 me-2">Edit
-									Bill</button>
+								<button type="submit" class="btn btn-primary w-50 me-2">Pay Now</button>
 								<a href="/bill" class="btn btn-secondary w-50 ms-2">Cancel</a>
 							</div>
 

@@ -9,3 +9,14 @@
 	height: 50px;
 	padding: 0;
 }
+
+/* Mobile message styles */
+.mobile-message {
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	margin: 1rem;
+}
