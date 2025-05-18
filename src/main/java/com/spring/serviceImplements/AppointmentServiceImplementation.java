@@ -55,7 +55,7 @@ public class AppointmentServiceImplementation implements AppointmentService {
 	@Override
 	public Optional<Appointment> getAppointmentById(String id) {
 		// TODO Auto-generated method stub
-		return Optional.empty();
+		return appointmentRepository.findById(id);
 	}
 
 	@Override
